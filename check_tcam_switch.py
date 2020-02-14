@@ -10,7 +10,7 @@ from napalm.base import get_network_driver
 
 optional_args = {'port': '443'}
 driver = get_network_driver('ios')
-dev = driver(hostname='142.225.213.132', username='112775', password='Kuleshwor567')
+dev = driver(hostname='142.225.213.132', username='prabin', password='prabin')
 dev.open()
 return_dictionary = dev.cli(['show platform tcam utilization | i IPv4 unicast indirectly-connected routes', ])
 a=(return_dictionary['show platform tcam utilization | i IPv4 unicast indirectly-connected routes'])
